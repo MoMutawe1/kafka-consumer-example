@@ -1,17 +1,17 @@
 # You can replace the configuration from (line 1 to line 15)
 #  with the KafkaConsumerConfig class in the config package.
-spring:
-  kafka:
-    consumer:
-      bootstrap-servers: localhost:9092  # Apache Kafka Server Port
-      group-id: jt-group-3
-      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
-      properties:
-        spring:
-          json:
-            trusted:
-              packages : com.javatechie.dto
+#spring:
+#  kafka:
+#    consumer:
+#      bootstrap-servers: localhost:9092  # Apache Kafka Server Port
+#      group-id: jt-consumer-group
+#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+#      properties:
+#        spring:
+#          json:
+#            trusted:
+#              packages : com.producerex.*
 # till here.
 
 server:
